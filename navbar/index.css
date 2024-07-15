@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    height: 10vh;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 20px rgb(218, 208, 208);
+    padding: 5px;
+
+}
+
+/* .logo{
+    width: 300px;
+    height: 400px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
+.desktopnav {
+    display: flex;
+    flex-direction:row;
+    /* justify-content: space-around;  */
+    gap: 2rem;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(43, 41, 41);
+    font-size: 24px ;
+}
+
+a:hover {
+    color: rgb(112, 108, 108);
+}
+
+/* hamburgur-menu */
+
+.material-symbols-outlined {
+  font-size: 40px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+.hamburger-menu {
+    display: none;
+   
+}
+
+/* sidebar menu */
+.sidebar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+
+  
+
+
+/* responsiveness on the navbar */
+@media only screen and (max-width: 1200px){
+
+    .desktopnav { 
+        display: none;
+    }
+    
+   .hamburger-icon{
+        display: block;
+        cursor: pointer; 
+   }
+
+    h2 {
+        font-size:20px; 
+    }
+    
+    nav {
+        padding-right: 10px;
+        justify-content: space-between; 
+    };
+}
+
+/* What do we focus on when we do flexbox on a container */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}

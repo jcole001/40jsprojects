@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(252, 251, 251);
+   
+}
+
+
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+h1 {
+    font-weight: 600;
+    font-family: "Tiny5",San-serif; 
+}
+
+
+
+.edit {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem ;
+}
+
+
+button{
+    padding:10px  20px ;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+    
+}
+
+
+button:hover{
+   transform: scale(1.1);
+}
+
+
+button:nth-of-type(1){
+    background-color: rgb(17, 145, 17);
+}
+
+
+button:nth-of-type(3){
+    background-color: rgb(209, 60, 60);
+}
+
+
+p{
+text-align: center;
+font-size: 60px;
+font-family: "Tiny5" , sans-serif ;
+font-weight: 400;
+
+}
+
+
+/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
